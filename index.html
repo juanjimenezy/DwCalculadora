@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"></script>
 </head>
 <body>
     <div id="appBg">
@@ -38,7 +39,7 @@
                 
                 <div>
                     <input type="button" value="0" onclick="document.calculator.ans.value+='0'" class="gray">
-                    <input type="reset" value="C">
+                    <input type="button" value="C" onclick="limpiar()">
                     <input type="button" value="=" onclick="document.calculator.ans.value=eval(document.calculator.ans.value)">
                     <input type="button" value="/" onclick="document.calculator.ans.value+='/'" class="orange">
                 </div>

@@ -1,5 +1,5 @@
 #appBg{
-    height: 420px;
+    height: 460px;
     width: 300px;
     border: 1px solid black;
     background-color: black;
@@ -40,14 +40,20 @@
 }
 
 #appBg .orange{
-    background-color: rgb(253, 149, 03);
-    color: wheat !important;
+    background-color: rgb(107, 116, 58);
+    color: rgb(187, 255, 0) !important;
 }
 
 
 #appBg .gray{
     background-color: rgb(51, 51, 51);
-    color: wheat !important;
+    color: rgb(187, 255, 0) !important;
+}
+
+#appBg .cero{
+    background-color: rgb(51, 51, 51);
+    width: 47% !important;
+    color: rgb(187, 255, 0) !important;
 }
 
 

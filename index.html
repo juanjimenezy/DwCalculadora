@@ -13,14 +13,14 @@
         <form name="calculator">
             <div>
                 <div>
-                    <input type="textfield" name="ans" value="" autocomplete="off" readonly>
+                    <input type="textfield" name="ans" id="ans" value="" autocomplete="off" readonly>
                 </div>
                 
                 <div>
                     <input type="button" value="7" onclick="document.calculator.ans.value+='7'" class="gray">
                     <input type="button" value="8" onclick="document.calculator.ans.value+='8'" class="gray">
                     <input type="button" value="9" onclick="document.calculator.ans.value+='9'" class="gray">
-                    <input type="button" value="+" onclick="document.calculator.ans.value+='+'" class="orange">
+                    <input type="button" value="+" onclick="sumar()" class="orange">
                 </div>
                 
                 <div>
@@ -31,16 +31,16 @@
                 </div>
                 
                 <div>
-                    <input type="button" value="1" onclick="document.calculator.ans.value+='3'" class="gray">
+                    <input type="button" value="1" onclick="document.calculator.ans.value+='1'" class="gray">
                     <input type="button" value="2" onclick="document.calculator.ans.value+='2'" class="gray">
-                    <input type="button" value="3" onclick="document.calculator.ans.value+='1'" class="gray">
+                    <input type="button" value="3" onclick="document.calculator.ans.value+='3'" class="gray">
                     <input type="button" value="X" onclick="document.calculator.ans.value+='*'" class="orange">
                 </div>
                 
                 <div>
                     <input type="button" value="0" onclick="document.calculator.ans.value+='0'" class="gray">
                     <input type="button" value="C" onclick="limpiar()">
-                    <input type="button" value="=" onclick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+                    <input type="button" value="=" onclick="operar()">
                     <input type="button" value="/" onclick="document.calculator.ans.value+='/'" class="orange">
                 </div>
             </div>
